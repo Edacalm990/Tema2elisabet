@@ -31,8 +31,8 @@ public class Ej08 {
         pediatria *= presupuesto;
         
         System.out.println("""
-                           Con un presupuesto de s% €
-                           se asigna a ginecología s% €, traumatología s% € y a pediatria s% €
+                           Con un presupuesto de %s €
+                           se asigna a ginecología %s €, traumatología %s € y a pediatria %s €
                            """.formatted(presupuesto, ginecologia,traumatologia, pediatria));
         
         
