@@ -18,24 +18,29 @@ para cualquier cantidad de presupuesto.*/
 
 public class Ej08 {
     public static void main(String[] args) {
-        double ginecologia=0.4;
-        double traumatologia=0.3;
-        double pediatria=0.3;
+        final double GINECOLOGIA=0.4;
+        final double TRAUMATOLOGIA=0.3;
+        final double PEDIATRIA=0.3;
+        
+        double presupuestoGinecologia;
+        double presupuestoTraumatologia;
+        double presupuestoPediatria;
+        
         
         Scanner teclado = new Scanner (System.in);
         System.out.println("Presupuesto total");
         double presupuesto = teclado.nextDouble();
         
-        ginecologia *= presupuesto;
-        traumatologia *= presupuesto;
-        pediatria *= presupuesto;
+        presupuestoGinecologia= GINECOLOGIA* presupuesto;
+        presupuestoTraumatologia = TRAUMATOLOGIA * presupuesto;
+        presupuestoPediatria= PEDIATRIA*presupuesto;
         
         System.out.println("""
-                           Con un presupuesto de %s €
-                           se asigna a ginecología %s €, traumatología %s € y a pediatria %s €
-                           """.formatted(presupuesto, ginecologia,traumatologia, pediatria));
+                           Con un presupuesto de %.2f €
+                           se asigna a ginecología %.2f €, traumatología %.2f € y a pediatrÍa %.2f €
+                           """.formatted(presupuesto, presupuestoGinecologia,  presupuestoTraumatologia, presupuestoPediatria));
         
-        
+        System.out.printf("Presupuesto Ginecologia %.2f €, Traumatologia %.2f", presupuestoGinecologia, presupuestoTraumatologia);
     }
     
 }
