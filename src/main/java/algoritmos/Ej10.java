@@ -42,8 +42,6 @@ public class Ej10 {
         double area = triangulo + rectangulo;
         
         JOptionPane.showMessageDialog(null, "El area del poligono irregular es %.2f".formatted(area));
-        
-        
-        
+               
     }
 }
