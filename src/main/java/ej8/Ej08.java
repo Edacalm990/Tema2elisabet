@@ -19,16 +19,22 @@ por pantalla.
 public class Ej08 {
     public static void main(String[] args) {
         
-        double segundos;
+        double segundosTotales;
         
         Scanner teclado = new Scanner(System.in);
         System.out.println("Dime los segundos");
         
-        segundos = teclado.nextDouble();
+        segundosTotales = teclado.nextDouble();
+        double minutosTotales=segundosTotales/60;
+        double horasTotales=minutosTotales/60;
+        int horas=(int)horasTotales;
+        int minutos= (int)minutosTotales - (horas*60);
+        int segundos=(int)segundosTotales - ((int)minutosTotales*60);
         
-        double hora = segundos / 120;
-        double minutos = segundos / 60;
-        
+        System.out.println(horas + " horas ");
+        System.out.println(minutos + " minutos ");
+        System.out.println(segundos + " segundos ");
+     
         
         
         

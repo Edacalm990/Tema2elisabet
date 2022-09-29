@@ -60,7 +60,7 @@ public class EjemploExpresionesLogicas {
         boolean a= 25 <= edad && edad<=30;
         System.out.println("Su edad esta comprendida entre 25 y 30 (ambos inclusive)? " + a);
         
-        // Su peso esta comprendido entre 50 y 100 (100 inclusive)?
+        // Su peso es mayor 50 o menor o igual 100 (100 inclusive)?
         boolean b= 50< peso || peso <=100;
         System.out.println("""
                            Su peso esta es mayor que 50 o menor o igual a  100? %b
@@ -79,9 +79,11 @@ public class EjemploExpresionesLogicas {
         System.out.println("Su edad si sumamos 10 es menos que 60 ? " + e);
         
         // f: nombre = Pablo ignorando mayus y min. Usa equalIgnoreCase
-        String pablo = "pablo";
-        boolean f = nombre.equalsIgnoreCase("Pablo");
-        System.out.println("Su nombre es Pablo? " + f);
+        final String PALABRA = "Pablo";
+        boolean f = nombre.equalsIgnoreCase(PALABRA);
+        System.out.println("""
+                           Su nombre es %s ?  %s 
+                           """.formatted(PALABRA, nombre));
         
         // g  apellido contiene 'j'. Usa contains en String
         boolean g= apellido1.toLowerCase().contains("j");
@@ -91,7 +93,7 @@ public class EjemploExpresionesLogicas {
         boolean h= apellido1.endsWith("dez");
         System.out.println("El apellido termina en dez? " + h);
         
-        // i la edad no esta entre 40 y 50
+        // i la edad no esta entre 40 o 50
         boolean i= edad<40 || edad>50;
         System.out.println("La edad esta no esta comprendida entre 40 y 50? " + i);
                 
