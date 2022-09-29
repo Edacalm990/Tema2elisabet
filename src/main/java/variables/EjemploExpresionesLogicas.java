@@ -61,9 +61,9 @@ public class EjemploExpresionesLogicas {
         System.out.println("Su edad esta comprendida entre 25 y 30 (ambos inclusive)? " + a);
         
         // Su peso esta comprendido entre 50 y 100 (100 inclusive)?
-        boolean b= 50< peso && peso <=100;
+        boolean b= 50< peso || peso <=100;
         System.out.println("""
-                           Su peso esta comprendido entre 50 y 100 (100 inclusive)? %b
+                           Su peso esta es mayor que 50 o menor o igual a  100? %b
                            """.formatted(b));   
         
         // c: estatura no mide 175
