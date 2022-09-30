@@ -5,6 +5,7 @@
 package variables;
 
 import java.util.Scanner;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -38,23 +39,22 @@ public class EjemploExpresionesLogicas {
         // (teclado.nextLine())
         
 
-        System.out.println("Introduce el nombre ");
-        nombre= teclado.nextLine();
+        nombre= JOptionPane.showInputDialog("Introduce tu nombre");
         
-        System.out.println("Introduce el apellido");
-        apellido1 = teclado.nextLine();
+        apellido1 = JOptionPane.showInputDialog("Introduce tu apellido");
         
-        // limpiar porquería 
-        teclado.nextLine();
+        // limpiar porquería solo con printInt
+        //teclado.nextLine();
         
-        System.out.println("Introduce la edad ");
-        edad = teclado.nextInt();
+        // Lectura de datos con JOption
+        String edadString=JOptionPane.showInputDialog("Introduce tu edad");
+        edad = Integer.parseInt(edadString);
         
-        System.out.println("Introduce el peso en kg");
-        peso= teclado.nextInt();
+        String pesoString=JOptionPane.showInputDialog("Introduce tu peso en KG");
+        peso=Double.parseDouble(pesoString);
         
-        System.out.println("Introduce la estatura en cm");
-        estatura=teclado.nextInt();
+        String estaturaString=JOptionPane.showInputDialog("Introduce tu estatura");
+        estatura=Integer.parseInt(estaturaString);
         
         // Su edad esta comprendida entre 25 y 30 (ambos inclusive)
         boolean a= 25 <= edad && edad<=30;
@@ -91,11 +91,14 @@ public class EjemploExpresionesLogicas {
         
         // h apellido termina en dez. Usa endsWith de los Strings
         boolean h= apellido1.endsWith("dez");
+        JOptionPane.showMessageDialog(null, "El apellido termina en dez?", "Boolean h", JOptionPane.INFORMATION_MESSAGE);
         System.out.println("El apellido termina en dez? " + h);
         
         // i la edad no esta entre 40 o 50
         boolean i= edad<40 || edad>50;
-        System.out.println("La edad esta no esta comprendida entre 40 y 50? " + i);
+        JOptionPane.showMessageDialog(null, """
+                                            La edad esta no esta comprendida entre 40 y 50? %b
+                                            """.formatted(i));
                 
     }
 }

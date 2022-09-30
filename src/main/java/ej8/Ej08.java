@@ -35,9 +35,6 @@ public class Ej08 {
         System.out.println(minutos + " minutos ");
         System.out.println(segundos + " segundos ");
      
-        
-        
-        
-        
+                
     }
 }
