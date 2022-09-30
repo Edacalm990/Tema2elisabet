@@ -27,6 +27,7 @@ public class Ej10 {
          
         /* Contruimos el cuandro de diálogo para la medida*/
         a=JOptionPane.showInputDialog("Introduce la primera medida (A)");
+        
         // otra forma de hacerlo parseando directamente
         b=Double.parseDouble(JOptionPane.showInputDialog("Introduce la segunda medida (B)"));
         c=JOptionPane.showInputDialog("Introduce la tercera medida (C)");

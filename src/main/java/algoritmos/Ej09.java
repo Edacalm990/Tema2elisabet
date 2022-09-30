@@ -5,6 +5,7 @@
 package algoritmos;
 
 import java.util.Scanner;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -16,10 +17,9 @@ public class Ej09 {
         
         final double IVA=0.21;
         
-        Scanner teclado= new Scanner (System.in);
-        System.out.println("¿Cual es el precio del articulo?");
+        String precioSinIvaString=JOptionPane.showInputDialog("¿Cual es el precio del artículo?");
+        double precioSinIva = Double.parseDouble(precioSinIvaString);
         
-        double precioSinIva=teclado.nextDouble();
         
         double precioConIva=(precioSinIva*IVA)+precioSinIva;
         
