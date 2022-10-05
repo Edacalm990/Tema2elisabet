@@ -38,8 +38,8 @@ public class Ej05 {
                         
             JOptionPane.showMessageDialog(null, """
                                                 Se necesitan %s profesores en total
-                                                %.0f harán %f horas a la semana
-                                                y necesitará un profesor extra que realice %f horas
+                                                %.0f harán %.2f horas a la semana
+                                                y necesitará un profesor extra que realice %.2f horas
                                                 """.formatted(totalDeProfesores, parteEntera, horasQueImparteCadaProfesorSemana, horasQueTieneQueHacerElProfesorExtra));
         } else {
             JOptionPane.showMessageDialog(null, """
