@@ -15,7 +15,7 @@ import javax.swing.JOptionPane;
 public class Ej07 {
     public static void main(String[] args) {
         final double DOLARPOREURO = 0.99; 
-        String eurosString = JOptionPane.showInputDialog("Cuantos euros quieres convertir?");
+        String eurosString = JOptionPane.showInputDialog("Cuantos euros quieres convertir a dolares?");
         double euros = Double.parseDouble(eurosString);
     }
 }
