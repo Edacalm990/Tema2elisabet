@@ -64,6 +64,6 @@ public class Ej12 {
         } else {
             System.out.println("Lo siento vas a taner que ir a recuperación");
         }
-       
+        
     }
 }
