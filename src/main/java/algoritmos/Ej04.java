@@ -24,6 +24,6 @@ public class Ej04 {
         double presupuesto= PRECIOFIJO + (PRECIOPORKM*kmRecorridos);
         
         JOptionPane.showMessageDialog(null, """
-                                            El presupuesto total es %f euros """.formatted(presupuesto));
+                                            El presupuesto total es de %f euros """.formatted(presupuesto));
     }
 }
