@@ -43,7 +43,7 @@ public class Ej05 {
                                                 """.formatted(totalDeProfesores, parteEntera, horasQueImparteCadaProfesorSemana, horasQueTieneQueHacerElProfesorExtra));
         } else {
             JOptionPane.showMessageDialog(null, """
-                                                Se necesitan %.0f profesores
+                                                Se necesitan %.0f profesores .
                                                 """.formatted(profesoresNecesarios));
         }
         
